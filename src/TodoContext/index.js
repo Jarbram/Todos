@@ -51,6 +51,13 @@ const addTodo = (text) => {
     saveTodos(newTodos);
 };
 
+const editTodo = (text, newText) => {
+    const todoIndex = todos.findIndex(todo => todo.text === text);
+    const newTodos = [...todos];
+    newTodos[todoIndex].text = newText;
+    saveTodos(newTodos);
+};
+
 return (
     <TodoContext.Provider value={{
     loading,
@@ -63,6 +70,7 @@ return (
     completeTodo,
     addTodo,
     deleteTodo,
+    editTodo,
     openModal,
     setOpenModal,
     }}>
