@@ -50,7 +50,7 @@ function TodoItem(props) {
         onClick={handleEditMode}
       >
         {editMode ? (
-          <input
+          <textarea
             className="TodoItem-input"
             type="text"
             value={text}
