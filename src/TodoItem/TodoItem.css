@@ -7,6 +7,10 @@
     margin-top: 24px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
   }
+
+  .TodoItem--complete {
+    background-color: #bff9c6;
+  }
   
   .TodoItem-p {
     color: #1e1e1f;
