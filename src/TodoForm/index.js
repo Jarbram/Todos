@@ -42,7 +42,7 @@ function TodoForm(){
 
                 <button type="submit" 
                 className="TodoForm-button TodoForm-button-add"
-                onclick={onSubmit}>
+                onClick={onSubmit}>
                     Save
                 </button>
             </div>

@@ -59,7 +59,7 @@ function AppUI() {
                         {...provided.dragHandleProps}
                       >
                         <TodoItem
-                          key={todo.text}
+                          key={todo.id}
                           text={todo.text}
                           completed={todo.completed}
                           onComplete={() => completeTodo(todo.text)}
